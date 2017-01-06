@@ -2,3 +2,9 @@
   width: 368px;
   margin: 25px 25px 25px 25px;
 }
+
+.pull-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}

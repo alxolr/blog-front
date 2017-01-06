@@ -4,11 +4,10 @@
     <md-card-title><strong>{{article.title}}</strong></md-card-title>
     <md-card-subtitle>added by <i>{{article.author.firstname}} {{article.author.lastname}} on {{article.created_at|date:'short'}}</i></md-card-subtitle>
   </md-card-header>
-  <img md-card-image src="{{article.image}}">
+  <img md-card-image src="{{ article.image }}">
   <md-card-content [innerHTML]="article.body | slice:200 | markdown">
   </md-card-content>
-  <md-card-actions>
-    <button md-button>LIKE</button>
-    <button md-button>SHARE</button>
+  <md-card-actions class="pull-right">
+    <button md-raised-button color="primary">Read more...</button>
   </md-card-actions>
 </md-card>

@@ -8,6 +8,6 @@ import {
 })
 export class SlicePipe implements PipeTransform {
   transform(text: string, length) {
-    return text.substring(1, length) + '...';
+    return text.substring(0, length) + '...';
   }
 }
