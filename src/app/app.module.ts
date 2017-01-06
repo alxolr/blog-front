@@ -10,13 +10,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ArticleListComponent } from './article-list/article-list.component';
 import './rxjs-extensions';
 import { ArticleService } from './article-list/article.service';
+import { ArticleCardComponent } from './article-list/article-card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ArticleListComponent
+    ArticleListComponent,
+    ArticleCardComponent
   ],
   imports: [
     BrowserModule,

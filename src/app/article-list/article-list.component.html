@@ -1,1 +1,4 @@
 <app-navbar></app-navbar>
+<div class="flex-container">
+  <app-article-card *ngFor="let article of articles | async" [article]="article" flex></app-article-card>
+</div>

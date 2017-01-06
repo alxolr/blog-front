@@ -16,6 +16,6 @@ export class ArticleService {
 
   getArticles(skip = 0, limit = 5): Observable<Article[]> {
     return this.http.get(this.endpoint)
-      .map((response: Response) => response.json() as Article[])
+      .map((response: Response) => response.json().articles as Article[]);
   }
 }

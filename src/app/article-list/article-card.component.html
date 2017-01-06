@@ -1,0 +1,15 @@
+<md-card class="example-card">
+  <md-card-header>
+    <!--<div md-card-avatar class="example-header-image"></div>-->
+    <md-card-title>{{article.title}}</md-card-title>
+    <md-card-subtitle>{{article.author.firstname}} {{article.author.lastname}} on {{article.created_at|date:'short'}}</md-card-subtitle>
+  </md-card-header>
+  <img md-card-image src="http://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2010/9/30/0/iStock-10552059_pile-of-worms-for-compost_s4x3.jpg.rend.hgtvcom.1280.960.jpeg">
+  <md-card-content>
+    {{article.body}}
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>LIKE</button>
+    <button md-button>SHARE</button>
+  </md-card-actions>
+</md-card>
