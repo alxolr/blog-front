@@ -1,0 +1,9 @@
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article-details-card {
+  width: 75%
+}

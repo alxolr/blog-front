@@ -1,10 +1,4 @@
 .example-card {
-  width: 368px;
+  width: 320px;
   margin: 25px 25px 25px 25px;
-}
-
-.pull-right {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
 }

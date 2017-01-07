@@ -13,6 +13,8 @@ import { ArticleService } from './article-list/article.service';
 import { ArticleCardComponent } from './article-list/article-card.component';
 import { MarkdownPipe } from './article-list/markdown.pipe';
 import { SlicePipe } from './article-list/slice.pipe';
+import { ArticleComponent } from './article/article.component';
+import { CommentCardComponent } from './article/comment-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { SlicePipe } from './article-list/slice.pipe';
     ArticleListComponent,
     ArticleCardComponent,
     MarkdownPipe,
-    SlicePipe
+    SlicePipe,
+    ArticleComponent,
+    CommentCardComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,8 @@ import { SlicePipe } from './article-list/slice.pipe';
     HttpModule,
     MaterialModule.forRoot(),
     RouterModule.forRoot([
-      { path: '', component: ArticleListComponent }
+      { path: '', component: ArticleListComponent },
+      { path: 'article/:slug', component: ArticleComponent }
     ])
   ],
   providers: [ArticleService],

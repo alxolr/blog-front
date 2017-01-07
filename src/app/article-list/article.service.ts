@@ -18,4 +18,9 @@ export class ArticleService {
     return this.http.get(this.endpoint)
       .map((response: Response) => response.json().articles as Article[]);
   }
+
+  getArticleBySlug(slug: string): Observable<Article> {
+    return this.http.get(`${this.endpoint}/${slug}`)
+      .map((response: Response) => response.json() as Article);
+  }
 }

@@ -8,6 +8,6 @@
   <md-card-content [innerHTML]="article.body | slice:200 | markdown">
   </md-card-content>
   <md-card-actions class="pull-right">
-    <button md-raised-button color="primary">Read more...</button>
+    <button md-raised-button color="primary" (click)="gotoDetails()">Read more...</button>
   </md-card-actions>
 </md-card>

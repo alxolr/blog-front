@@ -19,5 +19,6 @@ export class Article {
   updated_at: Date;
   author: Author;
   image: string;
+  slug: string;
   comments: Comment[];
 }

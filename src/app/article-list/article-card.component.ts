@@ -2,6 +2,9 @@ import {
   Component,
   Input
 } from '@angular/core';
+import {
+  Router
+} from '@angular/router';
 
 import { Article } from './article';
 
@@ -12,4 +15,10 @@ import { Article } from './article';
 })
 export class ArticleCardComponent {
   @Input() article: Article;
+
+  constructor(private router: Router) { }
+
+  gotoDetails() {
+    this.router.navigate(['/article', this.article.slug]);
+  }
 };
